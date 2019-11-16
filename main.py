@@ -44,4 +44,8 @@ def parntcheck(exper):
 
 
 for i in range(9):
-    print(parntcheck(str(input())))
+    inn = str(input())
+    if inn.lower() == "exit":
+      break
+    else:
+      print(parntcheck(inn))
